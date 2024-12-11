@@ -20,7 +20,7 @@ var groceries = [
 ];
 console.log(groceries.length);
 
-var deleteDuplicates = function(list) {
+var deleteDuplicates = function (list) {
   var cleanList = [];
 
   for (var item of list) {
@@ -28,11 +28,10 @@ var deleteDuplicates = function(list) {
       cleanList.push(item);
     }
   }
-  return cleanList;
+    return cleanList;
 };
 
-var newGroceries = deleteDuplicates (groceries);
-
+var newGroceries = deleteDuplicates(groceries);
 console.log(newGroceries.length);
 
 newGroceries.forEach(function (item, index) {
